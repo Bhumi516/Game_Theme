@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game-Themed Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Theme Toggle Hack -->
+    <input type="checkbox" id="theme-toggle" class="theme-checkbox">
+    <div class="app-container">
+        
+        <!-- Fixed Navigation (HUD) -->
+        <nav class="hud-nav">
+            <div class="nav-left">
+                <span class="hud-label">SYS_STATUS: <span class="text-green">ONLINE</span></span>
+                <label for="theme-toggle" class="theme-label">
+                    <span class="hud-btn toggle-btn">[TOGGLE_MODE]</span>
+                </label>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#start" class="hud-btn">START</a></li>
+                <li><a href="#profile" class="hud-btn">PROFILE</a></li>
+                <li><a href="#skills" class="hud-btn">SKILLS</a></li>
+                <li><a href="#missions" class="hud-btn">MISSIONS</a></li>
+                <li><a href="#achievements" class="hud-btn">AWARDS</a></li>
+                <li><a href="#contact" class="hud-btn">COMM_LINK</a></li>
+            </ul>
+        </nav>
+
+        <!-- 1. Start Screen -->
+        <section id="start" class="screen full-screen">
+            <div class="scanlines"></div>
+            <div class="start-content">
+                <h1 class="glitch" data-text="READY PLAYER ONE">READY PLAYER ONE</h1>
+                <p class="subtitle">PRESS START TO ENTER</p>
+                <a href="#profile" class="btn-start">
+                    <span>START GAME</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- 2. Player Profile -->
+        <section id="profile" class="screen">
+            <div class="section-header">
+                <h2>PLAYER PROFILE</h2>
+                <div class="line-deco"></div>
+            </div>
+            <div class="profile-card glass-panel">
+                <div class="avatar-container">
+                    <div class="avatar-frame">
+                        <!-- Placeholder for avatar -->
+                        <div class="avatar-placeholder"></div>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h3 class="neon-text-blue">PLAYER_NAME: <span class="white-text">N30_D3V</span></h3>
+                    <p class="role">CLASS: FULL-STACK DEVELOPER</p>
+                    <p class="bio">Leveling up my coding skills in the digital realm. Specializing in building immersive web experiences and conquering complex algorithms.</p>
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-label">LEVEL</span>
+                            <span class="stat-value neon-text-purple">42</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">EXP</span>
+                            <span class="stat-value neon-text-green">8900/10000</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">RANK</span>
+                            <span class="stat-value neon-text-pink">PLATINUM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills (Levels) -->
+        <section id="skills" class="screen">
+            <div class="section-header">
+                <h2>SKILL TREES</h2>
+                <div class="line-deco"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>HTML5 / CSS3</span>
+                        <span>LVL 90</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>JavaScript / ES6+</span>
+                        <span>LVL 85</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>React.js</span>
+                        <span>LVL 80</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-info">
+                        <span>Node.js / Python</span>
+                        <span>LVL 75</span>
+                    </div>
+                    <div class="progress-track">
+                        <div class="progress-fill" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Missions (Projects) -->
+        <section id="missions" class="screen">
+            <div class="section-header">
+                <h2>ACTIVE MISSIONS</h2>
+                <div class="line-deco"></div>
+            </div>
+            <div class="missions-grid">
+                <div class="mission-card glass-panel">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="mission-status status-complete">COMPLETED</div>
+                            <h3>Cyber-Shop UI</h3>
+                            <p class="tech-stack">React • Tailwind • Framer</p>
+                        </div>
+                        <div class="card-back">
+                            <p>An e-commerce interface built for a futuristic gear store. Includes custom 3D model viewers and seamless cart animations.</p>
+                            <a href="#" class="btn-small">VIEW MISSION LOG</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mission-card glass-panel">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="mission-status status-progress">IN PROGRESS</div>
+                            <h3>Neural Net Viz</h3>
+                            <p class="tech-stack">Three.js • WebGL</p>
+                        </div>
+                        <div class="card-back">
+                            <p>A web-based visualization tool for mapping neural network architectures in real-time 3D space.</p>
+                            <a href="#" class="btn-small">VIEW MISSION LOG</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mission-card glass-panel">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="mission-status status-complete">COMPLETED</div>
+                            <h3>Crypto Dash</h3>
+                            <p class="tech-stack">Vue.js • D3.js • REST</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Real-time cryptocurrency tracking dashboard with predictive charting features and portfolio management.</p>
+                            <a href="#" class="btn-small">VIEW MISSION LOG</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Achievements -->
+        <section id="achievements" class="screen">
+            <div class="section-header">
+                <h2>ACHIEVEMENTS UNLOCKED</h2>
+                <div class="line-deco"></div>
+            </div>
+            <div class="achievements-grid">
+                <div class="badge glass-panel">
+                    <div class="badge-icon icon-speed">⚡</div>
+                    <h4>Speed Demon</h4>
+                    <p>Load time &lt; 1s</p>
+                </div>
+                <div class="badge glass-panel">
+                    <div class="badge-icon icon-bug">🐛</div>
+                    <h4>Bug Smasher</h4>
+                    <p>Zero critical issues</p>
+                </div>
+                <div class="badge glass-panel">
+                    <div class="badge-icon icon-star">⭐</div>
+                    <h4>Clean Code</h4>
+                    <p>Perfect lint score</p>
+                </div>
+                <div class="badge glass-panel">
+                    <div class="badge-icon icon-shield">🛡️</div>
+                    <h4>Ironclad</h4>
+                    <p>Passed security audit</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Contact Terminal -->
+        <section id="contact" class="screen">
+            <div class="section-header">
+                <h2>COMMUNICATIONS LINK</h2>
+                <div class="line-deco"></div>
+            </div>
+            <div class="terminal-container glass-panel">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="terminal-title">secure_comm_channel.exe</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="sys-msg">&gt; INITIATING SECURE CONNECTION...</p>
+                    <p class="sys-msg">&gt; CONNECTION ESTABLISHED. AWAITING INPUT.</p>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">&gt; ENTER_NAME:</label>
+                            <input type="text" id="name" required placeholder="_">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">&gt; ENTER_EMAIL:</label>
+                            <input type="email" id="email" required placeholder="_">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">&gt; ENTER_MESSAGE:</label>
+                            <textarea id="message" rows="4" required placeholder="_"></textarea>
+                        </div>
+                        <button type="submit" class="btn-transmit">TRANSMIT DATA</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>END OF LINE. SYSTEM SHUTDOWN PENDING.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
